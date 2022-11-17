@@ -1,0 +1,24 @@
+[
+    {
+      "name": "Steamed Shrimp Dumpling",
+      "price": 5.59,
+      "method": "steamed",
+      "taste": "savory",
+      "image": "images/shrimp-dumpling.jpg"
+    },
+    {
+      "name": "Spicy Beef Tandem",
+      "price": 7.99,
+      "method": "steamed",
+      "taste": "spicy",
+      "image": "images/spicy-beef-tandon.jpg"
+    },
+    {
+      "name": "Red Bean Cake",
+      "price": 6.99,
+      "method": "bake",
+      "taste": "sweet",
+      "image": "images/red-bean-cake.jpg"
+    }
+  ]
+  
