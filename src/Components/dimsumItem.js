@@ -1,9 +1,17 @@
+import "./dimsumItem.css"
+
 export default function dimsumItem(item) {
     return (
-        <div>
-            {<img style={{width:"100%"}} src={item.image} />}
-            <h3>{item.name}</h3>
-            <h4>Price: {item.price}</h4>
+        <div className="dimsumitem">
+            {<img src={item.image} />}
+            <div className="info">
+                <h3>{item.name}</h3>
+                <h3>${item.price}</h3>
+            </div>
+            <div className="category">
+                <div class="m">{item.method}</div>
+                <div class="t">{item.taste}</div>
+            </div>
         </div>
     )
 }

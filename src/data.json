@@ -14,11 +14,74 @@
       "image": "images/spicy-beef-tandon.jpg"
     },
     {
-      "name": "Red Bean Cake",
-      "price": 6.99,
-      "method": "bake",
+      "name": "Pineapple Bun",
+      "price": 3.99,
+      "method": "baked",
       "taste": "sweet",
-      "image": "images/red-bean-cake.jpg"
+      "image": "images/pineapple-bun.jpg"
+    },
+    {
+      "name": "Turnip Cake",
+      "price": 6.39,
+      "method": "fried",
+      "taste": "savory",
+      "image": "images/turnip-cake.jpg"
+    },
+    {
+      "name": "Spicy Steamed Dumplings",
+      "price": 8.19,
+      "method": "steamed",
+      "taste": "spicy",
+      "image": "images/spicy-wonton.jpg"
+    },
+    {
+      "name": "Egg Tart",
+      "price": 5.29,
+      "method": "baked",
+      "taste": "sweet",
+      "image": "images/egg-tart.jpg"
+    },
+    {
+      "name": "Cha Siu Bao",
+      "price": 7.79,
+      "method": "baked",
+      "taste": "savory",
+      "image": "images/pork-bun.jpg"
+    },
+    {
+      "name": "Spare Rib",
+      "price": 6.99,
+      "method": "steamed",
+      "taste": "savory",
+      "image": "images/spare-rib.jpg"
+    },
+    {
+      "name": "Glutinous Rice Pork Dumpling",
+      "price": 5.29,
+      "method": "fried",
+      "taste": "savory",
+      "image": "images/salt-water-jiao.jpg"
+    },
+    {
+      "name": "Eggyolk Custard Bun",
+      "price": 6.69,
+      "method": "steamed",
+      "taste": "sweet",
+      "image": "images/egg-yolk-bun.jpg"
+    },
+    {
+      "name": "Spicy Chicken Feet",
+      "price": 5.59,
+      "method": "steamed",
+      "taste": "spicy",
+      "image": "images/spicy-chiken-feet.jpg"
+    },
+    {
+      "name": "Seasame Ball",
+      "price": 3.99,
+      "method": "fried",
+      "taste": "sweet",
+      "image": "images/seasame-ball.jpg"
     }
   ]
   
