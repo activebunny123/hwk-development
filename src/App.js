@@ -102,8 +102,8 @@ function App() {
 
   // // -------------------- DROP-DOWN FILTERS ----------------------
   // // Radio Select
-  const [methodFilter, setmethodFilter] = useState('none');   
-  const [tasteFilter, settasteFilter] = useState('none');
+  const [methodFilter, setmethodFilter] = useState('all');   
+  const [tasteFilter, settasteFilter] = useState('all');
   const [sortFunc, setsortFunc] = useState('none');
   const [priceRange, setpriceRange] = useState([3,9]);
 
@@ -123,7 +123,7 @@ function App() {
             onChange={handleChange}
             row
           >
-            <FormControlLabel value='none' control={<Radio size="small" onChange={handleChange}/>} label='none' />
+            <FormControlLabel value='all' control={<Radio size="small" onChange={handleChange}/>} label='all' />
             {methods.map((method) => (<FormControlLabel value={method} control={<Radio size="small" onChange={handleChange}/>} label={method} />))}
             {/* <FormControlLabel value="female" control={<Radio />} label="Female" />
             <FormControlLabel value="male" control={<Radio />} label="Male" /> */}
@@ -147,7 +147,7 @@ function App() {
             onChange={handleChange}
             row
           >
-            <FormControlLabel value='none' control={<Radio size="small"/>} label='none' />
+            <FormControlLabel value='all' control={<Radio size="small"/>} label='all' />
             {tastes.map((taste) => (<FormControlLabel value={taste} control={<Radio size="small"/>} label={taste} />))}
           </RadioGroup>
         </FormControl>
@@ -202,8 +202,8 @@ function App() {
   function applyFilters() {
     setdisplaydata(dimsumData);
     var cpy = [...dimsumData] 
-    if (methodFilter != 'none') {cpy = cpy.filter(datum => datum.method == methodFilter);}
-    if (tasteFilter != 'none') {cpy = cpy.filter(datum => datum.taste == tasteFilter)}
+    if (methodFilter != 'all') {cpy = cpy.filter(datum => datum.method == methodFilter);}
+    if (tasteFilter != 'all') {cpy = cpy.filter(datum => datum.taste == tasteFilter)}
     cpy = cpy.filter(datum => datum.price >= priceRange[0] && datum.price <= priceRange[1])
     if (sortFunc != 'none') {
       if (sortFunc == 'price low to high') {cpy = sortbyPriceLH(cpy)}
@@ -264,15 +264,8 @@ function App() {
             <h3 class="subtitle">Item(s)</h3>
             <div>
               {cartState.cartitems.map((item) => (
-                console.log(cartState),
                 <div className="cart-item">
                   {cartItem(item)}
-                  <div className="cart-op">
-                    <button class="cart-button" id="add" onClick={() => addfromCart(item)}>+</button>
-                    <h4>{item.itemcount}</h4>
-                    <button class="cart-button" id="remove" onClick={() => removeItem(item,1)}>-</button>
-                    <button class="cart-button" id="remove-all" onClick={() => removeItem(item, Number(cartState.cartitems.find(cartitem => cartitem.name == item.name).itemcount))}>Remove All</button>
-                  </div>
                 </div>
               ))
               }

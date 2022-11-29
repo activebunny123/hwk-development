@@ -181,38 +181,3 @@ h2 {
   font-size: 1.3vw;
   flex-wrap: wrap;
 }
-
-.cart-op {
-  width: max-content;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.cart-button {
-  font-size: 1.2vw;
-  padding: 0.1vw 0.2vw;
-  width:max-content;
-  border-radius: 0.5vw;
-  border-color: white;
-  background-color: orange;
-  color: white;
-}
-
-h4 {
-  font-size: 1.2vw;
-  font-weight: 400;
-  margin: 0 0.2vw
-}
-
-#remove-all {
-  margin-left: 0.5vw
-}
-
-/*
-.css-vqmohf-MuiButtonBase-root-MuiRadio-root {
-  padding: 0.1vw !important;
-}
-*/

@@ -1,4 +1,4 @@
-import "./dimsumItem.css"
+import "./dimsumItem.css";
 
 export default function dimsumItem(item) {
     return (
