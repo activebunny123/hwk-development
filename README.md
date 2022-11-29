@@ -10,7 +10,7 @@ In particular, the application allows the customers to filter items by cooking m
 ### Usability Principles Considered
 #### Learnability
 The application is beginner-friendly in that every filter and sort functionalities are clearly named and labeled. Also, any buttons such as "add to cart" or "remove from cart", or simply "+" and "-", have very clear label on them. In addition, the cart is designed to be similar to the existing convention so that the first-time customers can easily apply their experiences from elsewhere.
-Moreover, the design of the application emphasizes logical layout and hierarchy. The name of the restaurant is at the top, followed by filtering & sorting, and then it's divided into menu and shopping cart, where the menu takes up more space than the cart. Also, the application has a clear hierarchy where the size of texts indicate their order in the hierarchy.  
+Moreover, the design of the application emphasizes logical layout and hierarchy. The name of the restaurant is at the top, followed by filtering & sorting, and then it's divided into menu and shopping cart, where the menu takes up more space than the cart. Also, the application has a clear hierarchy where the size of texts indicate their order in the hierarchy. Each item in the shopping cart is followed by a gray line separating two items, enhancing readability. 
 #### Memorability
 The returning customers should find the application easy to use because every component is clearly labeled and follow the conventional organization and functionality.
 #### Usability
@@ -23,7 +23,7 @@ At the top of the page, there are 4 filtering & sorting functionalities, and eac
 #### Menu Items
 Each menu item is a component that contains the item image, name, price, and filtering categories.
 #### Cart Items
-Each cart item is a component that contains the item name, and variable parts that allows customer to add/remove the item from the cart directly. At the same time, it reflects the real time change in item counts. 
+Each cart item is a component that contains the item name. 
 
 ### How Data is Passed Down Through Components
 data is passed into components via props.
