@@ -3,13 +3,13 @@ import dimsumData from "./data.json"
 import dimsumItem from './Components/dimsumItem';
 import cartItem from './Components/cartItem';
 import { useState } from "react";
-// imports for radio select
+// imports for radio select: used the radio select from MUI
 import Radio from '@mui/material/Radio';
 import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
-// imports for slider
+// imports for slider: used the slider from MUI
 import Slider from '@mui/material/Slider';
 import Box from '@mui/material/Box';
 
