@@ -176,8 +176,38 @@ h2 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 90%;
   align-items: center;
   margin: 1vw;
   font-size: 1.3vw;
-  flex-wrap: wrap;
+  border-bottom: 1px solid lightgray;
+}
+  
+.cart-op {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart-button {
+  font-size: 1.2vw;
+  padding: 0.1vw 0.2vw;
+  width:max-content;
+  border-radius: 0.5vw;
+  border-color: white;
+  background-color: orange;
+  color: white;
+}
+
+h4 {
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 0 0.2vw
+}
+
+#remove-all {
+  margin-left: 0.5vw
 }
